@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+/*
+Baseado na fórmula abaixo escreva um programa que calcule e apresente a área de um círculo.
+
+A = R2
+git
+Onde:
+ 	A representa a área do círculo
+  	 = 3.141592654
+	R = Raio do círculo (deve ser fornecido pelo usuário)
+ */
+public class CalculeAreaCirculoApresente {
+    public static void main (String[] args){
+    int a = 0;
+    double pi = 3.14;
+        Scanner entrada = new Scanner(System.in);
+        double raio;
+        System.out.println("Digite o raio do círculo");
+        raio = entrada.nextDouble();
+        double calc01 = raio * raio;
+        System.out.println("A área do círculo é: " + calc01 * pi);
+    }
+}
