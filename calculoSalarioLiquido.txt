@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+/*
+Baseado nas fórmulas abaixo, desenvolva uma rotina que calcule o salário líquido de um funcionário. Após o cálculo o programa deve apresentar o salário base e o salário líquido calculado.
+
+SB = HT * VH
+TD = (PD / 100) * SB
+SL = SB  - TD
+
+Onde:
+SB =  Salário Base
+HT = Horas Trabalhadas
+VH = Valor Hora de trabalho
+TD = Total de Descontos
+PD = Percentual de Desconto
+SL = Salário Líquido
+
+Obs: Incrementei na atividade, captando e calculando tudo o que o usuário informar.
+
+ */
+public class CalculeSalarioLiquido {
+    public static void main(String[] args){
+        Scanner in = new Scanner (System.in);
+        System.out.println("Digite o seu salário base:");
+          double salarioBase = in.nextDouble();
+        System.out.println("Quantas horas trabalhou:");
+          short horasTrabalhadas = in.nextShort();
+        System.out.println("Valor por hora trabalhada");
+          double valorHoraTrabalhada = in.nextDouble();
+        System.out.println("Percentual de desconto");
+          double percentualDesconto = in.nextDouble();
+          double salarioBrutoRecebido = (horasTrabalhadas * valorHoraTrabalhada);
+          double totalDescontos = percentualDesconto / 100 * salarioBrutoRecebido;
+          double salarioLiquRecebido = (salarioBrutoRecebido - totalDescontos);
+            System.out.println("O salário bruto recebido no mês é " + salarioBrutoRecebido + " e o salário líquido é " + salarioLiquRecebido);
+    }
+}
