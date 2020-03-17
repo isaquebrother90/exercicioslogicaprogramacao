@@ -1,0 +1,21 @@
+/*
+Efetuar o cálculo de quantos litros de combustível um automóvel consome em uma viagem. Sabendo que o automóvel tem uma
+autonomia de 12Km por litro de combustível, desenvolva o cálculo utilizando a fórmula abaixo:
+    D=TV
+	LU=D  12
+        Onde:
+		D = Distância em Km
+		T = Tempo gasto na viagem
+		V = Velocidade
+ */
+public class ConsumoCombustivel {
+    public static void main(String[] args) {
+        int distancia;
+        int consumoLitros;
+        int tempoGastoHoras = 8;
+        int velocidadeHoras = 90;
+        distancia = tempoGastoHoras * velocidadeHoras;
+        consumoLitros = distancia / 12;
+        System.out.println("O automóvel consumiu " + consumoLitros + " lt" + " nessa viagem");
+    }
+}
