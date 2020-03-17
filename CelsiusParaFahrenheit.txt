@@ -1,3 +1,6 @@
+/*
+Escreva um programa que realize a conversão de graus Celsius (C)  para graus Fahrenheit (F). Utilize a fórmula abaixo:
+*/
 public class CelsiusParaFahrenheit {
     public static void main(String[] args) {
         byte celsius = 20;
