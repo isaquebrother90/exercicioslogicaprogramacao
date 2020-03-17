@@ -1,0 +1,7 @@
+public class CelsiusParaFahrenheit {
+    public static void main(String[] args) {
+        byte celsius = 20;
+        int fahrenheit = (9 * celsius) / 5;
+        System.out.println("Os graus em Fahrenheit são: " + fahrenheit);
+    }
+}
