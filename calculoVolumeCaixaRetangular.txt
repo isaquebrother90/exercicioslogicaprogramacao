@@ -1,0 +1,19 @@
+/*
+Desenvolver um programa que apresente e calcule o volume de uma caixa retangular, utilize a fórmula abaixo:
+V=C*L*A
+Onde:
+	V = Volume em cm3
+	C = Comprimento
+	L = Largura
+	A = Altura
+ */
+public class calculoVolumeCaixaRetangular {
+    public static void main(String[] args) {
+        float V;
+        float C = 0.60F;
+        float L = 0.30F;
+        float A = 0.30F;
+        V = C * L * A;
+        System.out.println("O volume cúbico da caixa retangular é " + V + " cm cúbicos");
+    }
+}
