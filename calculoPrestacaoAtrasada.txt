@@ -1,0 +1,14 @@
+/*
+Calcular e apresentar o valor de uma prestação em atraso, utilize a fórmula abaixo:
+P=VALOR + (VALOR * (TAXA / 100) * TEMPO)
+Onde P é o valor da prestação em atraso.
+ */
+public class calculoPrestacaoAtrasada {
+    public static void main(String[] args) {
+        float valorP = 980.50F;
+        float taxaDia = 0.5F;
+        float tempoAtrasoEmDias = 60;
+        float valorPAtrasada = valorP + (valorP * (taxaDia / 100) * tempoAtrasoEmDias);
+        System.out.println("O Valor atualizado da prestação em atraso é " + valorPAtrasada);
+    }
+}
