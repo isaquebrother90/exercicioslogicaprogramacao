@@ -1,0 +1,17 @@
+/*
+Elaborar um programa que realize a conversão de R$ para US$, o programa deve
+saber qual o valor da cotação do dólar e fazer a conversão.
+ */
+import java.util.Scanner;
+
+public class conversaoRealDolar {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite quantos reais quer converter em dólar");
+        double quantidadeReal = input.nextDouble();
+        double taxaCambio = 5.02;
+        double calculoConversao = (quantidadeReal / taxaCambio);
+        double resultadoConversao = calculoConversao;
+        System.out.println("A cotação em dólares é " + resultadoConversao);
+    }
+}
