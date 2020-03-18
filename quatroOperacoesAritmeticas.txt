@@ -1,0 +1,16 @@
+/*
+Desenvolva uma rotina que leia dois valores numéricos inteiros e apresente o resultado
+das quatro operações aritméticas básicas (adicao, subtracao, multiplicacao e divisao).
+ */
+public class quatroOperacoesAritmeticas {
+    public static void main(String[] args) {
+        int num1 = 12;
+        int num2 = 6;
+        int adicao = (num1 + num2);
+        int subtracao = (num1 - num2);
+        int multiplicacao = (num1 * num2);
+        int divisao = (num1 / num2);
+        System.out.print("Resultado adição: " + adicao + "\n" + "Resultado subtração: " + subtracao + "\n"
+                + "Resultado multiplicação: " + multiplicacao + "\n" + "Resultado divisão: " + divisao);
+    }
+}
