@@ -1,0 +1,17 @@
+/*
+Construa um programa que calcule a velocidade em metros por segundo de um projétil que percorre
+uma distância em quilômetros a um espaço de tempo em minutos, utilize a fórmula abaixo:
+V=(D * 1000) / (T * 60)
+Onde:
+	V = Velocidade em m/s
+	D = Distância
+	T = Tempo
+ */
+public class velocidadeProjetil {
+    public static void main(String[] args) {
+        int distanciaKm = 2;
+        float tempoMinutos = 0.1F;
+        float velocidade = (distanciaKm * 1000) / (2 * 60);
+        System.out.println(" A velocidade em metros por segundo é: " + velocidade + " m/s");
+    }
+}
