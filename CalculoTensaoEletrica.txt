@@ -1,0 +1,24 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/*
+Em um circuito elétrico temos as seguintes informações:
+275 Ω e 1 A, calcule a tensão elétrica, permitindo que o usuário digite os valores para Ohms e Amperes.
+Utilize a fórmula U=R*I
+Onde:
+	U = Tensão em Volts
+	R = Resistência em Ohms
+	I = Corrente em Amperes
+ */
+public class CalculoTensaoEletrica {
+    public static void main (String[] args) {
+        Scanner leia = new Scanner (System.in);
+        System.out.println("Digite a resistência em Ohms");
+        double resistenciaOhms = leia.nextDouble();
+        System.out.println("Digite a amperagem");
+        double amperagem = leia.nextDouble();
+        double tensaoEletrica = (resistenciaOhms * amperagem);
+        DecimalFormat tensao = new DecimalFormat("##.000");//INCLUÍ ESSE OBJETO PARA ARREDONDAR
+        System.out.println("A tensão elétrica é " + tensao.format(resistenciaOhms));
+    }
+}
