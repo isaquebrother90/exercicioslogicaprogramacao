@@ -1,0 +1,20 @@
+import java.text.DecimalFormat;
+
+/*
+Em um circuito elétrico temos as seguintes informações:
+12 V e 175 Ω, calcule a corrente elétrica, utilizando a fórmula abaixo:
+I=U / R
+Onde:
+	I = Corrente em Amperes
+	U = Tensão em Volts
+	R = Resistência em Ohms
+*/
+public class CalculoCorrenteEletrica {
+    public static void main (String[] args) {
+        double tensaoVolts = 40;
+        double resistenciaOhms = 7.07;
+        double correnteEletrica = (tensaoVolts / resistenciaOhms);
+        DecimalFormat corrente = new DecimalFormat("##.000");//INCLUÍ ESSE OBJETO PARA ARREDONDAR
+        System.out.println("A corrente elétrica é " + corrente.format(resistenciaOhms));
+    }
+}
