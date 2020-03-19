@@ -1,0 +1,27 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/*
+Ainda podemos realizar o cálculo de potência elétrica, desenvolva um rotina que
+calcule a potência de um equipamento, permitindo que o usuário digite os valores
+para Volts  e Amperes.
+Dados:
+220 V  e 25 A
+Fórmula: P=U*I
+Onde:
+		P = Potência em Watts
+		U  = Tensão em Volts
+		I = Corrente em Amperes
+*/
+public class CalculoPotenciaEquipamento {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Digite a voltagem");
+        double voltagem = leia.nextDouble();
+        System.out.println("Digite a amperagem");
+        double amperagem = leia.nextDouble();
+        double potenciaWhatts = (voltagem * amperagem);
+        DecimalFormat potencia = new DecimalFormat("##.###");//Usado para arredondar o resultado
+        System.out.println("A potência elétrica em Whatts é " + potencia.format(potenciaWhatts));
+    }
+}
