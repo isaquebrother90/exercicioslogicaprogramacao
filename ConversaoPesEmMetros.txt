@@ -12,7 +12,7 @@ public class ConversaoPesEmMetros {
         double ft = leia.nextDouble();
         double umMetroEmPes = 3.2808;
         double conversaoEmMetros = (ft / umMetroEmPes);
-        DecimalFormat conversao = new DecimalFormat("##.###");//INCLUÍ ESSE OBJETO PARA FICAR MAIS LEGÍVEL
+        DecimalFormat conversao = new DecimalFormat("##.###");//INCLUÍ ESSE OBJETO PARA ARREDONDAR
         System.out.println (ft + " pés equivalem a " + conversao.format (conversaoEmMetros) + " metros");
     }
 }

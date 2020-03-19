@@ -1,0 +1,20 @@
+import java.text.DecimalFormat;
+
+/*
+Em um circuito elétrico temos as seguintes informações:
+275 V e 10 A, calcule a resistência elétrica, utilizando
+a fórmula R=U / I
+Onde:
+	R = Resistência em Ohms
+	U = Tensão em Volts
+	I = Corrente em Amperes
+*/
+public class CalculoResistenciaEletrica {
+    public static void main (String[] args) {
+        double tensaoVolts = 40;
+        double correnteAmperes = 7.07;
+        double resistenciaOhms = (tensaoVolts / correnteAmperes);
+        DecimalFormat resistencia = new DecimalFormat("##.000");//INCLUÍ ESSE OBJETO PARA ARREDONDAR
+        System.out.println("A resistência elétrica é " + resistencia.format(resistenciaOhms));
+    }
+}
