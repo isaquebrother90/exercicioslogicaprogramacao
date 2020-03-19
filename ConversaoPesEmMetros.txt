@@ -1,0 +1,18 @@
+/*
+Sabendo que 1 ft é igual a 0,3048 m ou 30,48 cm, desenvolva um programa que
+leia uma medida em pés e calcule o equivalente em metros.
+*/
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ConversaoPesEmMetros {
+    public static void main (String[] args){
+        Scanner leia = new Scanner (System.in);
+        System.out.println ("Digite quantos ft deseja converter");
+        double ft = leia.nextDouble();
+        double umMetroEmPes = 3.2808;
+        double conversaoEmMetros = (ft / umMetroEmPes);
+        DecimalFormat conversao = new DecimalFormat("##.###");//INCLUÍ ESSE OBJETO PARA FICAR MAIS LEGÍVEL
+        System.out.println (ft + " pés equivalem a " + conversao.format (conversaoEmMetros) + " metros");
+    }
+}
