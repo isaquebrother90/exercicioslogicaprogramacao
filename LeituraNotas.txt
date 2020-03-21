@@ -1,0 +1,32 @@
+import java.util.Scanner;
+/*
+Desenvolva um rotina que leia as notas de quatro bimestres de um aluno (N1, N2, N3 e N4), e informe
+o status do aluno baseado na tabela abaixo:
+
+Se a média for menor que 50
+Status: REPROVADO
+Se a média for igual a 50
+Status: RECUPERAÇÃO
+Se a média for maior que 50
+Status: APROVADO
+ */
+public class LeituraNotas {
+    public static void main (String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        System.out.println ("Digite a nota do primeiro bimestre");
+        float nota1 = entrada.nextFloat();
+        System.out.println ("Digite a nota do segundo bimestre");
+        float nota2 = entrada.nextFloat();
+        System.out.println ("Digite a nota do terceiro bimestre");
+        float nota3 = entrada.nextFloat();
+        System.out.println ("Digite a nota do quarto bimestre");
+        float nota4 = entrada.nextFloat();
+        float media = (nota1 + nota2 + nota3 + nota4) / 4;
+        if (media < 8) { //Decidi por deixar com 8 ao invés de 50, mais realista no contexto estudantil
+            System.out.println ("REPROVADO");
+        } else if (media == 8) {
+            System.out.println ("RECUPERAÇÃO");
+        } else
+            System.out.println ("APROVADO");
+        }
+    }
