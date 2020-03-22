@@ -1,0 +1,147 @@
+import java.util.Scanner;
+
+/*
+Desenvolva uma calculadora de IMC (Índice de Massa Corporal), após realizado
+o cálculo classificar o paciente de acordo com a tabela abaixo:
+IMC             Estado Nutricional
+< 10             Desnutrição Grau V
+de 10 a 12,9    Desnutrição Grau IV
+de 13 a 15,9    Desnutrição Grau III
+de 16 a 16,9    Desnutrição Grau II
+de 17 a 18,4    Desnutrição Grau I
+de 18,5 a 24,9  Normal
+de 25 a 29,9    Pré-obesidade
+de 30 a 34,5    Obesidade Grau I
+de 35 a 39,9    Obesidade Grau II
+> 40            Obesidade Grau III
+		Para realizar o cálculo de IMC utilize a fórmula abaixo:
+		IMC=PESO / ALTURA * 2
+ */
+public class CalculadoraImc {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner (System.in);
+
+        System.out.println("Bem vindo a IMC Calculator!");
+        System.out.println("Qual é o seu peso?");
+        double peso = entrada.nextDouble();
+        System.out.println("Qual é a sua altura?");
+        double altura = entrada.nextDouble();
+        double imcCalculo1 = altura * altura;
+        double imc = peso / imcCalculo1;
+
+        if (imc < 10) {
+            System.out.println("Desnutrição Grau V");
+            System.out.println("Sinto muito, seu IMC é " + imc + " kg/m2 e você precisa ganhar peso.");
+            System.out.println("");
+            System.out.println("Para ganhar peso de forma saudável e sem ganhar barriga, você deve começar a praticar atividade física, aumentar" +
+                    " o volume das refeições e comer a cada 3 horas.");
+            System.out.println("Para isso, ingira a quantidade de calorias/dia correta e aumente o consumo de alimentos integrais" +
+                    " e fontes de proteína, como carnes magras, peixes, ovos, arroz integral, feijão e aveia.");
+            System.out.println("");
+            System.out.println("Além disso, você pode ganhar peso e eliminar a gordurinha extra da barriga fazendo" +
+                    " tratamentos estéticos, como a endermologia e a criolipólise.");
+
+        } else if (imc >= 10 && imc < 13) {
+            System.out.println("Desnutrição Grau IV");
+            System.out.println("Sinto muito, seu IMC é " + imc + " kg/m2 e você precisa ganhar peso.");
+            System.out.println("");
+            System.out.println("Para ganhar peso de forma saudável e sem ganhar barriga, você deve começar a praticar atividade física, aumentar" +
+                    " o volume das refeições e comer a cada 3 horas.");
+            System.out.println("Para isso, ingira a quantidade de calorias/dia correta e aumente o consumo de alimentos integrais" +
+                    " e fontes de proteína, como carnes magras, peixes, ovos, arroz integral, feijão e aveia.");
+            System.out.println("");
+            System.out.println("Além disso, você pode ganhar peso e eliminar a gordurinha extra da barriga fazendo" +
+                    "tratamentos estéticos, como a endermologia e a criolipólise.");
+
+        } else if (imc >= 13 && imc < 16) {
+            System.out.println("Desnutrição Grau III");
+            System.out.println("Sinto muito, seu IMC é " + imc + " kg/m2 e você precisa ganhar peso.");
+            System.out.println("");
+            System.out.println("Para ganhar peso de forma saudável e sem ganhar barriga, você deve começar a praticar atividade física, aumentar" +
+                    " o volume das refeições e comer a cada 3 horas.");
+            System.out.println("Para isso, ingira a quantidade de calorias/dia correta e aumente o consumo de alimentos integrais" +
+                    " e fontes de proteína, como carnes magras, peixes, ovos, arroz integral, feijão e aveia.");
+            System.out.println("");
+            System.out.println("Além disso, você pode ganhar peso e eliminar a gordurinha extra da barriga fazendo" +
+                    " tratamentos estéticos, como a endermologia e a criolipólise.");
+
+        } else if (imc >= 16 & imc < 17) {
+            System.out.println("Desnutrição Grau II");
+            System.out.println("Sinto muito, seu IMC é " + imc + " kg/m2 e você precisa ganhar peso.");
+            System.out.println("");
+            System.out.println("Para ganhar peso de forma saudável e sem ganhar barriga, você deve começar a praticar atividade física, aumentar" +
+                    " o volume das refeições e comer a cada 3 horas.");
+            System.out.println("Para isso, ingira a quantidade de calorias/dia correta e aumente o consumo de alimentos integrais" +
+                    " e fontes de proteína, como carnes magras, peixes, ovos, arroz integral, feijão e aveia.");
+            System.out.println("");
+            System.out.println("Além disso, você pode ganhar peso e eliminar a gordurinha extra da barriga fazendo" +
+                    " tratamentos estéticos, como a endermologia e a criolipólise.");
+
+        } else if (imc >= 17 && imc < 18.5) {
+            System.out.println("Desnutrição Grau I");
+            System.out.println("Sinto muito, seu IMC é " + imc + " kg/m2 e você precisa ganhar peso.");
+            System.out.println("");
+            System.out.println("Para ganhar peso de forma saudável e sem ganhar barriga, você deve começar a praticar atividade física, aumentar" +
+                    " o volume das refeições e comer a cada 3 horas.");
+            System.out.println("Para isso, ingira a quantidade de calorias/dia correta e aumente o consumo de alimentos integrais" +
+                    " e fontes de proteína, como carnes magras, peixes, ovos, arroz integral, feijão e aveia.");
+            System.out.println("");
+            System.out.println("Além disso, você pode ganhar peso e eliminar a gordurinha extra da barriga fazendo" +
+                    " tratamentos estéticos, como a endermologia e a criolipólise.");
+
+        } else if (imc >= 18.5 && imc < 25) {
+            System.out.println("Normal");
+            System.out.println("Parabéns, seu IMC é " + imc + " kg/m2 e você está dentro do peso adequado!");
+            System.out.println("");
+            System.out.println("Continue tendo cuidado com a alimentação e praticando atividade física regularmente para manter o peso e prevenir doenças.");
+
+        } else if (imc >= 25 && imc < 30) {
+            System.out.println("Pré-obesidade");
+            System.out.println(" " + "Sinto muito, mas o seu IMC é " + imc + " kg/m2, por isso você está acima do peso e deveria emagrecer");
+            System.out.println("");
+            System.out.println("Para emagrecer com saúde é importante comer mais frutas e verduras além de praticar" +
+                    " exercício físico entre 2 e 3 vezes por semana, ingerindo 2359 calorias por dia..");
+            System.out.println("");
+            System.out.println("Você deve ainda falar com seu médico para fazer exames de sangue para saber se o seu colesterol e triglicerídeosestão bem. " +
+                    "Um nutricionista também pode te ajudar" +
+                    " a emagrecer comendo bem, mas além da dieta é também importante fazer exercícios físicos bem" +
+                    " orientado por um preparador físico para emagrecer mais rápido.");
+
+        } else if (imc >= 30 && imc < 35) {
+            System.out.println("Obesidade Grau I");
+            System.out.println(" " + "Sinto muito, mas o seu IMC é " + imc + " kg/m2, por isso você está acima do peso e deveria emagrecer");
+            System.out.println("");
+            System.out.println("Para emagrecer com saúde é importante comer mais frutas e verduras além de praticar" +
+                    " exercício físico entre 2 e 3 vezes por semana, ingerindo 2359 calorias por dia..");
+            System.out.println("");
+            System.out.println("Você deve ainda falar com seu médico para fazer exames de sangue para saber se o seu colesterol e triglicerídeosestão bem. " +
+                    "Um nutricionista também pode te ajudar" +
+                    " a emagrecer comendo bem, mas além da dieta é também importante fazer exercícios físicos bem" +
+                    " orientado por um preparador físico para emagrecer mais rápido.");
+
+        } else if (imc >= 35 && imc < 40) {
+            System.out.println("Obesidade Grau II");
+            System.out.println("Sinto muito, mas o seu IMC é " + " kg/m2, por isso você está acima do peso e deveria emagrecer");
+            System.out.println("");
+            System.out.println("Para emagrecer com saúde é importante comer mais frutas e verduras além de praticar" +
+                    " exercício físico entre 2 e 3 vezes por semana, ingerindo menos calorias por dia");
+            System.out.println("");
+            System.out.println("Você deve ainda falar com seu médico para fazer exames de sangue para saber se o seu colesterol e triglicerídeos" +
+                    " estão bem. Um nutricionista também pode te ajudar" +
+                    " a emagrecer comendo bem, mas além da dieta é também importante fazer" +
+                    " exercícios físicos bem orientado por um preparador físico para emagrecer mais rápido.");
+
+        } else if (imc > 40) {
+            System.out.println("Obesidade Grau III");
+            System.out.println("Sinto muito, mas o seu IMC é " + imc + " kg/m2, por isso você está acima do peso e deveria emagrecer");
+            System.out.println("Para emagrecer com saúde é importante comer mais frutas e verduras além de praticar" +
+                    " exercício físico entre 2 e 3 vezes por semana, ingerindo menos calorias por dia.");
+            System.out.println("");
+            System.out.println("Você deve ainda falar com seu médico para fazer exames de sangue para saber se o seu colesterol e triglicerídeos" +
+                    " estão bem. Um nutricionista também pode te ajudar" +
+                    " a emagrecer comendo bem, mas além da dieta é também importante fazer" +
+                    " exercícios físicos bem orientado por um preparador físico para emagrecer mais rápido");
+        }
+    }
+}
