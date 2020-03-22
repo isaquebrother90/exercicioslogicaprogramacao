@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+/*
+Crie uma calculadora que seja capaz de realizar as quatro operações básicas. Para tal cumpra-se os seguintes requisitos:
+- A calculadora deve apresentar um menu e perguntar qual a operação desejada (+, -, * ou /).
+- A calculadora deve solicitar os dois valores numéricos, realizar a operação e exibir o resultado.
+
+ */
+public class CalculadoraBasica {
+    public static void main (String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Bem vindo a calculadora do Isaque!");
+        System.out.println("");
+        System.out.println("É possível fazer 4 tipos de operações:");
+        System.out.println("1-Adição");
+        System.out.println("2-Subtração");
+        System.out.println("3-Multiplicação");
+        System.out.println("4-Divisão");
+        System.out.println("");
+        System.out.println("Por favor, digite um número correspondente a operação que deseja realizar");
+        int tipoDesejado = entrada.nextInt();
+        System.out.println("Informe o primeiro valor numérico");
+        int primeiroValor = entrada.nextInt();
+        System.out.println("Informe o segundo valor numérico");
+        int segundoValor = entrada.nextInt();
+        if (tipoDesejado == 1) {
+            System.out.println("O resultado dessa operação de adição é: " + (primeiroValor + segundoValor));
+        } else if (tipoDesejado == 2) {
+            System.out.println("O resultado dessa operação de subtração é: " + (primeiroValor - segundoValor));
+        } else if (tipoDesejado == 3) {
+            System.out.println("O resultado dessa operação de multiplicação é: " + (primeiroValor * segundoValor));
+        } else if (tipoDesejado == 4) {
+            System.out.println("O resultado dessa operação de divisão é: " + (primeiroValor / segundoValor));
+        }
+        System.out.println("Obrigado por usar a calculadora do Isaque!!");
+    }
+}
