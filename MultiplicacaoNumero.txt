@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/*
+Leia um número inteiro qualquer  e multiplique por 2, apresentar o resultado da
+multiplicação  somente se o resultado for maior ou igual a 30.
+ */
+public class MultiplicacaoNumero {
+    public static void main(String[] args) {
+        Scanner leitura = new Scanner (System.in);
+        System.out.println ("Digite um número inteiro de sua preferência");
+        int numero = leitura.nextInt();
+        int multiplicacao = (numero * 2);
+        if (multiplicacao >= 30) {
+            System.out.println(multiplicacao);
+        } else {
+            System.out.println("Resultado menor que 30, tente novamente!");
+        }
+    }
+}
