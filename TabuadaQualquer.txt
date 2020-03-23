@@ -1,0 +1,43 @@
+import java.util.Scanner;
+/*
+Elaborar um programa que calcule e apresente a tabuada de um número qualquer.
+ */
+public class TabuadaQualquer {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+            System.out.println("Digite a tabuada que deseja");
+            int tabuada = entrada.nextInt();
+            for (int i = 1; i <= 1; i++) {
+            System.out.println(tabuada + "x" + i + "=" + tabuada * i);
+               for (int j = 2; j <= 2; j++) {
+                   System.out.println(tabuada + "x" + j + "=" + tabuada * j);
+                   for (int k = 3; k <= 3; k++) {
+                       System.out.println(tabuada + "x" + k + "=" + tabuada * k);
+                       for (int l = 4; l <= 4 ; l++) {
+                           System.out.println(tabuada + "x" + l + "=" + tabuada * l);
+                           for (int m = 5; m <= 5 ; m++) {
+                               System.out.println(tabuada + "x" + m + "=" + tabuada * m);
+                               for (int n = 6; n <= 6; n++) {
+                                   System.out.println(tabuada + "x" + n + "=" + tabuada * n);
+                                   for (int o = 7; o <= 7; o++) {
+                                       System.out.println(tabuada + "x" + o + "=" + tabuada * o);
+                                       for (int p = 8; p <= 8; p++) {
+                                           System.out.println(tabuada + "x" + p + "=" + tabuada * p);
+                                           for (int q = 9; q <= 9 ; q++) {
+                                               System.out.println(tabuada + "x" + q + "=" + tabuada * q);
+                                               for (int r = 10; r <= 10 ; r++) {
+                                                   System.out.println(tabuada + "x" + r + "=" + tabuada * r);
+                                               }
+                                           }
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+        }
+        System.out.println();
+            System.out.println("Obrigado por usar nossa tabuada!!");
+    }
+}
