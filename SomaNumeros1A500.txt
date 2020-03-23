@@ -1,0 +1,13 @@
+/*
+Elaborar um programa que apresente o somatório dos números na faixa de 1 até 500.
+ */
+public class SomaNumero1A500 {
+    public static void main(String[] args){
+        int total=0;
+        int i;
+        for(i=0;i<=500;i+=2){
+            total+=i;
+            System.out.println(i);
+        }
+    }
+}
