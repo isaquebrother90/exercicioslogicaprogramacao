@@ -1,5 +1,5 @@
 /*
-Elaborar um programa que calcule e apresente a tabuada de um número qualquer.
+Eu como usuário gostaria que um sistema fizesse automaticamente a tabuada do 1 ao 10
  */
 public class TabuadaQualquerAninhada {
     public static void main(String[] args) {
