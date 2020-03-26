@@ -1,0 +1,54 @@
+/*
+ *
+Melhorar o programa acima fazendo com que leia 5 números inteiros e calcule o fatorial dos 5 valores lidos.
+ */
+import java.util.Scanner;
+
+public class FatorialCom5 {
+    public static void main (String [] args) {
+        Scanner entrada = new Scanner (System.in);
+        System.out.println ("Digite o primeiro numero");
+        int primeiro = entrada.nextInt();
+        int res = 2 / 2;
+        int i = 2;
+        while (i <= primeiro) {
+            res = res * i;
+            i++;
+        }
+        System.out.println (res);
+
+        System.out.println ("Digite o segundo numero");
+        int segundo = entrada.nextInt();
+        while (i <= segundo) {
+            res = res * i;
+            i++;
+        }
+        System.out.println (res);
+
+        System.out.println ("Digite o terceiro número");
+        int terceiro = entrada.nextInt();
+        while (i <= terceiro) {
+            res = res * i;
+            i++;
+        }
+        System.out.println(res);
+
+        System.out.println("Digite o quarto número");
+        int quarto = entrada.nextInt();
+        while (i <= quarto) {
+            res = res * i;
+            i++;
+        }
+        System.out.println(res);
+
+        System.out.println("Digite o quinto número");
+        int quinto = entrada.nextInt();
+        while (i <= quinto) {
+            res = res * i;
+            i++;
+        }
+        System.out.println(res);
+
+    }
+
+}
