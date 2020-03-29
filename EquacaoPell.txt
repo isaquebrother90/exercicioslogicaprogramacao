@@ -1,0 +1,46 @@
+import java.util.Scanner;
+/*
+Equação de Pell
+
+A equação de Pell permite encontrar o resultado de uma operação de raiz quadrada apenas com subtrações sucessivas.
+Exemplo:
+raiz de 27=??
+Para obter a raiz quadrada de 27 procedemos da seguinte forma:
+27 - 1 = 26
+26 - 3 = 23
+23 - 5 = 18
+18 - 7 = 11
+11 - 9 = 2
+
+	Veja que 5 passos foram tomados sendo assim temos a parte inteira da raiz. Logo
+	podemos dizer que 27=5.
+
+	Desenvolva um programa que dado um número inteiro qualquer utilize a equação de
+	Pell e calcule a parte inteira do resultado da raiz quadrada deste número.
+
+	BÔNUS: Ainda utilizando a Equação de Pell existe uma forma de calcular os dígitos
+	após a vírgula, tente incrementar o seu programa, acrescentando essa
+	funcionalidade.
+ */
+public class EquacaoPell {
+    public static void main(String[] args) {
+
+            Scanner entrada = new Scanner(System.in);
+            int n = 0;
+            int i = 0;
+            System.out.println("Calculadora de equação de Pell");
+            System.out.println("");
+            System.out.println("Digite um número inteiro");
+            int x = entrada.nextInt();
+
+            while (i <= x) //Enquanto i < x ....
+            {
+                x -= i; //Atualiza o valor de x;  x=x-i ; supondo que receba 27, depois vem 25, depois 23, depois 17, e por fim para no 9.
+                i += 2; //Atualiza o valor de i;  i=i+2. Deste modo, i sempre será ímpar; com x valendo 27, após o primeiro loop i vale 2,
+                // depois 4, depois 6, depois 8, e por fim 10.
+                n++; //Soma mais 1 ao n; com x valendo 27, a sequencia começa com 1, depois, 2, depois 3, depois 4 e por fim 5.
+            }
+            System.out.println("A raiz quadrada aproximada é " + n); //Finalmente, depois que todo o while.. foi executado, retorna o valor de n.
+        }
+
+    }
