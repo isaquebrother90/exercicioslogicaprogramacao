@@ -7,7 +7,16 @@ Crie uma calculadora que seja capaz de realizar as quatro operações básicas. 
 
  */
 public class CalculadoraBasica {
+   protected int operacao;
+   protected String continuacao;
+}
+
+public class UsaCalculadora extends Calculadora {
+
     public static void main (String[] args) {
+        Calculadora c = new Calculadora ();
+        
+        do {
         Scanner entrada = new Scanner (System.in);
         System.out.println("Bem vindo a calculadora do Isaque!");
         System.out.println("");
@@ -23,7 +32,8 @@ public class CalculadoraBasica {
         int primeiroValor = entrada.nextInt();
         System.out.println("Informe o segundo valor numérico");
         int segundoValor = entrada.nextInt();
-        if (tipoDesejado == 1) {
+        c.operacao = new java.util.Scanner(System.in).nextInt();
+        } if (tipoDesejado == 1) {
             System.out.println("O resultado dessa operação de adição é: " + (primeiroValor + segundoValor));
         } else if (tipoDesejado == 2) {
             System.out.println("O resultado dessa operação de subtração é: " + (primeiroValor - segundoValor));
@@ -31,7 +41,20 @@ public class CalculadoraBasica {
             System.out.println("O resultado dessa operação de multiplicação é: " + (primeiroValor * segundoValor));
         } else if (tipoDesejado == 4) {
             System.out.println("O resultado dessa operação de divisão é: " + (primeiroValor / segundoValor));
-        }
-        System.out.println("Obrigado por usar a calculadora do Isaque!!");
-    }
+
+               if (c.segundoValor == 0) {
+	          System.out.println("Não existe divisão por zero!");
+	       }
+
+	          System.out.println("Resultado: " + (primeiroValor / segundoValor));
+        } else {
+
+            System.out.println("Operação inválida!");
+	}
+
+            System.out.println("Deseja continuar (S/N)? ");
+	    c.continuacao = new java.util.Scanner(System.in).next();
+    } while (c.continuacao.equals("S"));
+	System.out.println("Operação finalizada!");
+}
 }
