@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+/*
+Crie uma calculadora que seja capaz de realizar as quatro operações básicas. Para tal cumpra-se os seguintes requisitos:
+- A calculadora deve apresentar um menu e perguntar qual a operação desejada (+, -, * ou /).
+- A calculadora deve solicitar os dois valores numéricos, realizar a operação e exibir o resultado.
+
+ */
+public class CalculadoraBasicaMelhorada {
+    protected double primeiroValor;
+    protected double segundoValor;
+    protected int operacao;
+    protected String continuacao;
+
+    public double soma(){
+        return primeiroValor + segundoValor;
+    }
+
+    public double subtracao(){
+        return primeiroValor - segundoValor;
+    }
+
+    public double multiplicacao(){
+        return primeiroValor * segundoValor;
+    }
+
+    public double divisao(){
+        return primeiroValor / segundoValor;
+    }
+
+} class UsCalculadora extends CalculadoraBasicaMelhorada {
+
+    public static void main (String[] args) {
+        CalculadoraBasicaMelhorada c = new CalculadoraBasicaMelhorada ();
+
+        do {
+            System.out.println("Bem vindo a calculadora do Isaque!");
+            System.out.println("");
+            System.out.println("Informe o primeiro valor numérico");
+            c.primeiroValor = new java.util.Scanner(System.in).nextDouble();
+            System.out.println("Informe o segundo valor numérico");
+            c.segundoValor = new java.util.Scanner(System.in).nextDouble();
+            System.out.println("Escolha a operacao: ");
+            System.out.println("1-Adição");
+            System.out.println("2-Subtração");
+            System.out.println("3-Multiplicação");
+            System.out.println("4-Divisão");
+            System.out.println("");
+            c.operacao = new java.util.Scanner(System.in).nextInt();
+
+            if (c.operacao == 1) {
+                System.out.println("O resultado dessa operação de adição é: " + c.soma());
+            } else if (c.operacao == 2) {
+                System.out.println("O resultado dessa operação de subtração é: " + c.subtracao());
+            } else if (c.operacao == 3) {
+                System.out.println("O resultado dessa operação de multiplicação é: " + c.multiplicacao());
+            } else if (c.operacao == 4) {
+
+                if (c.segundoValor == 0) {
+                    System.out.println("Não existe divisão por zero!");
+                }
+
+                System.out.println("Resultado: " + (c.divisao()));
+            } else {
+
+                System.out.println("Operação inválida!");
+            }
+
+            System.out.println("Deseja continuar (S/N)? ");
+            c.continuacao = new java.util.Scanner(System.in).next();
+        } while (c.continuacao.equals("S"));
+        System.out.println("Operação finalizada!");
+    }
+}
