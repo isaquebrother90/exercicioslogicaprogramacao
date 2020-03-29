@@ -7,6 +7,8 @@ Crie uma calculadora que seja capaz de realizar as quatro operações básicas. 
 
  */
 public class CalculadoraBasica {
+   protected double primeiroValor;
+   protected double segundoValor;
    protected int operacao;
    protected String continuacao;
 }
@@ -17,29 +19,26 @@ public class UsaCalculadora extends Calculadora {
         Calculadora c = new Calculadora ();
         
         do {
-        Scanner entrada = new Scanner (System.in);
         System.out.println("Bem vindo a calculadora do Isaque!");
         System.out.println("");
-        System.out.println("É possível fazer 4 tipos de operações:");
+        System.out.println("Escolha a operacao: ");
         System.out.println("1-Adição");
         System.out.println("2-Subtração");
         System.out.println("3-Multiplicação");
         System.out.println("4-Divisão");
         System.out.println("");
-        System.out.println("Por favor, digite um número correspondente a operação que deseja realizar");
-        int tipoDesejado = entrada.nextInt();
         System.out.println("Informe o primeiro valor numérico");
-        int primeiroValor = entrada.nextInt();
+        c.primeiroValor = new java.util.Scanner(System.in).nextDouble();
         System.out.println("Informe o segundo valor numérico");
-        int segundoValor = entrada.nextInt();
+        c.segundoValor = new java.util.Scanner(System.in).nextDouble();
         c.operacao = new java.util.Scanner(System.in).nextInt();
-        } if (tipoDesejado == 1) {
+        if (c.operacao == 1) {
             System.out.println("O resultado dessa operação de adição é: " + (primeiroValor + segundoValor));
-        } else if (tipoDesejado == 2) {
+        } else if (c.operacao == 2) {
             System.out.println("O resultado dessa operação de subtração é: " + (primeiroValor - segundoValor));
-        } else if (tipoDesejado == 3) {
+        } else if (c.operacao == 3) {
             System.out.println("O resultado dessa operação de multiplicação é: " + (primeiroValor * segundoValor));
-        } else if (tipoDesejado == 4) {
+        } else if (c.operacao == 4) {
             System.out.println("O resultado dessa operação de divisão é: " + (primeiroValor / segundoValor));
 
                if (c.segundoValor == 0) {
