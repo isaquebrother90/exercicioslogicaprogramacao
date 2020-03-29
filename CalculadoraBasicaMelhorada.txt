@@ -4,6 +4,9 @@ import java.util.Scanner;
 Crie uma calculadora que seja capaz de realizar as quatro operações básicas. Para tal cumpra-se os seguintes requisitos:
 - A calculadora deve apresentar um menu e perguntar qual a operação desejada (+, -, * ou /).
 - A calculadora deve solicitar os dois valores numéricos, realizar a operação e exibir o resultado.
+- Mostre o menu caso o usuário queira fazer outra operação
+- Finalize o programa caso não queira
+- Apresente inválido se digitar divisão por 0
 
  */
 public class CalculadoraBasicaMelhorada {
