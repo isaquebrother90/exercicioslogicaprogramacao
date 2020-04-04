@@ -9,28 +9,57 @@ public class FatorialCom5 {
         Scanner entrada = new Scanner (System.in);
         System.out.println ("Digite o primeiro numero");
         int primeiro = entrada.nextInt();
-        int res = 2 / 2;
+        float res = 1;
         int i = 2;
         while (i <= primeiro) {
             res = res * i;
             i++;
         }
-        System.out.println (res);
 
         System.out.println ("Digite o segundo numero");
+        float res2= 1;
+        i = 1;
         int segundo = entrada.nextInt();
         while (i <= segundo) {
-            res = res * i;
+            res2 = res2 * i;
             i++;
         }
-        System.out.println (res);
 
         System.out.println ("Digite o terceiro número");
+        float res3= 1;
+        i = 1;
         int terceiro = entrada.nextInt();
         while (i <= terceiro) {
-            res = res * i;
+            res3 *= i;
             i++;
         }
+
+        System.out.println("Digite o quarto número");
+        float res4= 1;
+        i = 1;
+        int quarto = entrada.nextInt();
+        while (i <= quarto) {
+            res4 *= i;
+            i++;
+        }
+
+        System.out.println("Digite o quinto número");
+        float res5= 1;
+        i = 1;
+        int quinto = entrada.nextInt();
+        while (i <= quinto) {
+            res5 = res5 * i;
+            i++;
+        }
+        System.out.println("O fatorial de " + primeiro + " é " + res);
+        System.out.println("O fatorial de " + segundo + " é " + res2);
+        System.out.println("O fatorial de " + terceiro + " é " + res3);
+        System.out.println("O fatorial de " + quarto + " é " + res4);
+        System.out.println("O fatorial de " + quinto + " é " + res5);
+
+    }
+
+}
         System.out.println(res);
 
         System.out.println("Digite o quarto número");
